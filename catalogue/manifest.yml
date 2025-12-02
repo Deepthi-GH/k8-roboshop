@@ -23,22 +23,22 @@ spec:
     spec:
       containers: 
       - name: catalogue 
-      image: kattika/catalogue:v1 
-      ports:
-      - name: liveness-port
-        containerPort: 8080
-      readinessProbe:
-        httpGet:
-          path: /healthz
-          port: liveness-port
-        failureThreshold: 1
-        periodSeconds: 15
+        image: kattika/catalogue:v1 
+        ports:
+        - name: liveness-port
+          containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: liveness-port
+          failureThreshold: 1
+          periodSeconds: 15
       livenessProbe:
         httpGet:
-          path: /healthz
-          port: liveness-port
+            path: /health
+            port: liveness-port
         failureThreshold: 1
-        periodSeconds: 15
+        periodSeconds: 15 
          
 ---
 apiVersion: v1
