@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Deployment
 metadata: 
   name: mongodb
-  namespcae: roboshop
+  namespace: roboshop
   # These are replica set labels.
   labels:
     project: roboshop
