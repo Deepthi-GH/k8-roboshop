@@ -50,7 +50,7 @@ spec:
           periodSeconds: 5
         volumeMounts:
           - name: mysql-config
-            mountpath: /etc/mysql/conf.d/my.cnf
+            mountPath: /etc/mysql/conf.d/my.cnf
             subPath: my.cnf  
       volumes:
         - name: mysql-config 
