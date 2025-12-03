@@ -48,6 +48,7 @@ metadata:
   name: frontend
   namespace: roboshop
 spec:  
+  type: LoadBalancer #external world
   selector: 
     project: roboshop
     component: frontend
