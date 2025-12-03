@@ -31,7 +31,7 @@ spec:
         - name: RABBITMQ_DEFAULT_USER
           value: roboshop
         - name: RABBITMQ_DEFAULT_PASS
-          value: roboshop123
+          value: roboshop
         imagePullPolicy: Always
         readinessProbe:
           tcpSocket:
